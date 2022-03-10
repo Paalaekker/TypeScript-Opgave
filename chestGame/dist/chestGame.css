@@ -1,0 +1,227 @@
+*::before, * ::after{
+    box-sizing: border-box;
+    
+}
+:root
+{
+    --hue-neutral: 180;
+}
+
+.grid-containerInfo {
+    /* --hue: var(--hue-neutral);
+    display: inline-grid;
+    width: 800px;
+    max-width: 80%;
+    border-radius: 10px;
+    background-color: hsl(var(--hue),70%, 30%);
+    padding: 10px;
+    justify-content: center;
+    align-items: center; */
+    width: 99%;
+    height: 99%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* body {
+    --hue: var(--hue-neutral);
+    padding: 2p;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue),70%, 40%);
+    
+} */
+
+.grid-containerBottom {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+    height: 12vw;
+    width: 12vw;
+    padding-top: 2%;
+    
+}
+
+.chestImg {
+    display: block;
+    transition-duration: 0.5s;
+}
+.chestImg:hover
+{
+    width: 16vw;
+    height: 16vw;
+}
+
+header{
+    font-family: serif;
+}
+h1{
+    font-size: 3vw;
+    font-style:italic;
+}
+h2{
+    font-size: 2vw;
+}
+h3
+{
+    font-size: 1vw;
+}
+h4
+{
+    font-size: 0.75vw;
+}
+
+
+.body{
+    padding: 2p;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+
+    background: -webkit-linear-gradient(left, red,orange,yellow,green,blue,indigo,violet);
+    background: -moz-linear-gradient(left, red,orange,yellow,green,blue,indigo,violet,red);
+    background: -o-linear-gradient(left, red,orange,yellow,green,blue,indigo,violet,red);
+    background: -ms-linear-gradient(left, red,orange,yellow,green,blue,indigo,violet,red);
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet,red);
+    background-repeat:repeat-x;
+    
+    -webkit-animation:go 1s linear infinite;
+    -moz-animation:go 1s linear infinite;
+    -o-animation:go 1s linear infinite;
+    -ms-animation:go 1s linear infinite;
+    animation:go 2s linear infinite;
+  }
+  
+  @-webkit-keyframes go{
+    0%{background-position:0;}
+    100%{background-position:100vw 0;}
+  
+  }
+  @-moz-keyframes go{
+    0%{background-position:0;}
+    50%{background-position:100vw 0;}
+    100%{background-position:100vw 0;}
+  
+  }
+  @-o-keyframes go{
+    0%{background-position:0;}
+    100%{background-position:100vw 0;}
+  
+  }
+  @-ms-keyframes go{
+    0%{background-position:0;}
+    100%{background-position:100vw 0;}
+  
+  }
+  @keyframes go{
+    0%{background-position:0;}
+    100%{background-position:100vw 0;}
+  
+  }
+  .text
+{
+    overflow: hidden;
+    transition-duration: 0.7s;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.6);
+    margin: 5%;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-width: 1px;
+    box-shadow: 0 0 10px 2px;
+    width: 30vw;
+    height: 10vw;
+    justify-content: center;
+    align-items: center; 
+  
+}
+.text:hover
+{
+    border-color: rgba(0, 0, 0, 1);
+    border-width: 5px;
+    background-color: rgba(255,255,255,1);;
+    width: 35vw;
+    height: 20vw;
+}
+ 
+  button{
+      
+    transition-duration: 0.9s;
+    background-color: rgba(255,255,255,0.7);
+    padding: 2p;
+    margin: 0;
+    border-radius: 20px;
+    display: flex;
+    width: 20vw;
+    height: 12vw;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-width: 1px;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    box-shadow: 0 0 10px 2px;
+  
+  }
+  button:hover
+  {
+      color: rgba(0, 75, 0, 1);
+      background-color: rgba(255, 255, 255, 1);
+      font-size: 1200%;
+      width: 50vw;
+      height: 30vw;
+      font-size: 10vw;
+      border-color: rgba(0, 0, 0, 1);
+      border-width: 2.5px;
+      
+  }
+
+  .hide
+  {
+      display: none; 
+  }
+  .grid-pic
+  {
+      display: block;
+      padding: 5px;
+      max-width: fit-content;
+      max-height: fit-content; 
+      
+      
+  }
+
+ #win
+ {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(0, 255, 0, 1);
+    font-size: 7vw;
+ }
+#gameOver
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(255, 0, 0, 1);
+    font-size: 7vw;
+}
+
+ 
